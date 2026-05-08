@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apex Talent Group | Premier Staffing Solutions</title>
+  <meta name="description" content="Apex Talent Group connects top-tier professionals with industry-leading companies. Expert staffing in tech, finance, healthcare, and creative industries." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo" id="logo-link">
+        <span class="logo-icon">⬡</span>
+        <span class="logo-text">Apex<span class="logo-accent">Talent</span></span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#industries" class="nav-link">Industries</a></li>
+        <li><a href="#process" class="nav-link">Our Process</a></li>
+        <li><a href="#stats" class="nav-link">Results</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="#contact" class="btn btn-nav" id="nav-cta">Hire Now</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Trusted by 500+ Companies Nationwide
+      </div>
+      <h1 class="hero-title">
+        We Connect <br />
+        <span class="gradient-text">World-Class Talent</span><br />
+        With Great Opportunities
+      </h1>
+      <p class="hero-subtitle">
+        Apex Talent Group is your strategic hiring partner. Whether you're scaling a startup or building an enterprise team, we deliver vetted professionals who drive results — fast.
+      </p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary" id="hero-hire-btn">Find Talent</a>
+        <a href="#services" class="btn btn-ghost" id="hero-services-btn">
+          <span>Explore Services</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+      <div class="hero-logos">
+        <span class="logos-label">Trusted by teams at</span>
+        <div class="logo-strip">
+          <div class="logo-item">Salesforce</div>
+          <div class="logo-item">Adobe</div>
+          <div class="logo-item">JPMorgan</div>
+          <div class="logo-item">HCA Health</div>
+          <div class="logo-item">Deloitte</div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator" id="scroll-indicator">
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats-bar" id="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number" data-target="4800">0</div>
+          <div class="stat-label">Placements Made</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="98">0</div>
+          <div class="stat-suffix">%</div>
+          <div class="stat-label">Client Satisfaction</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="12">0</div>
+          <div class="stat-suffix">+</div>
+          <div class="stat-label">Years in Business</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="72">0</div>
+          <div class="stat-suffix">hrs</div>
+          <div class="stat-label">Avg. Time to Fill</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">What We Offer</div>
+        <h2 class="section-title">Flexible Staffing <span class="gradient-text">Solutions</span></h2>
+        <p class="section-subtitle">From contract to full-time, we tailor every engagement to meet your exact needs.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card" id="service-temp">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>Temporary Staffing</h3>
+          <p>Quickly scale your workforce up or down with flexible contract workers ready to hit the ground running.</p>
+          <ul class="service-features">
+            <li>Same-week deployment</li>
+            <li>Pre-screened candidates</li>
+            <li>No long-term commitment</li>
+          </ul>
+          <a href="#contact" class="service-link">Learn More →</a>
+        </div>
+
+        <div class="service-card featured" id="service-perm">
+          <div class="featured-badge">Most Popular</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/><path d="M12 11v10"/></svg>
+          </div>
+          <h3>Permanent Placement</h3>
+          <p>Find your next long-term hire with our rigorous vetting process and cultural-fit assessments.</p>
+          <ul class="service-features">
+            <li>90-day replacement guarantee</li>
+            <li>Behavioral & skills testing</li>
+            <li>Dedicated account manager</li>
+          </ul>
+          <a href="#contact" class="service-link">Learn More →</a>
+        </div>
+
+        <div class="service-card" id="service-exec">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3>Executive Search</h3>
+          <p>Identify transformational leaders and C-suite executives with our confidential retained search practice.</p>
+          <ul class="service-features">
+            <li>Nationwide candidate pool</li>
+            <li>Discreet & confidential</li>
+            <li>Industry-specific experts</li>
+          </ul>
+          <a href="#contact" class="service-link">Learn More →</a>
+        </div>
+
+        <div class="service-card" id="service-contract">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+          </div>
+          <h3>Contract-to-Hire</h3>
+          <p>Try before you commit. Evaluate candidates on the job before making a permanent offer.</p>
+          <ul class="service-features">
+            <li>Reduce hiring risk</li>
+            <li>Real-world evaluation</li>
+            <li>Seamless conversion</li>
+          </ul>
+          <a href="#contact" class="service-link">Learn More →</a>
+        </div>
+
+        <div class="service-card" id="service-rpo">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+          </div>
+          <h3>RPO Solutions</h3>
+          <p>Outsource your entire recruitment process to us. We act as an extension of your HR team.</p>
+          <ul class="service-features">
+            <li>End-to-end management</li>
+            <li>Scalable hiring pipelines</li>
+            <li>Employer brand support</li>
+          </ul>
+          <a href="#contact" class="service-link">Learn More →</a>
+        </div>
+
+        <div class="service-card" id="service-payroll">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          </div>
+          <h3>Payroll & Compliance</h3>
+          <p>We handle taxes, benefits, and legal compliance so you can focus on running your business.</p>
+          <ul class="service-features">
+            <li>W-2 employee management</li>
+            <li>Benefits administration</li>
+            <li>Multi-state compliance</li>
+          </ul>
+          <a href="#contact" class="service-link">Learn More →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INDUSTRIES -->
+  <section class="industries" id="industries">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Expertise</div>
+        <h2 class="section-title">Industries We <span class="gradient-text">Serve</span></h2>
+        <p class="section-subtitle">Deep domain knowledge across the sectors that matter most.</p>
+      </div>
+      <div class="industries-grid">
+        <div class="industry-card" id="ind-tech">
+          <div class="industry-icon">💻</div>
+          <h3>Technology</h3>
+          <p>Software engineers, data scientists, DevOps, and product managers.</p>
+        </div>
+        <div class="industry-card" id="ind-finance">
+          <div class="industry-icon">📊</div>
+          <h3>Finance</h3>
+          <p>Analysts, CPAs, compliance officers, and financial planners.</p>
+        </div>
+        <div class="industry-card" id="ind-health">
+          <div class="industry-icon">🏥</div>
+          <h3>Healthcare</h3>
+          <p>Nurses, medical coders, administrators, and allied health pros.</p>
+        </div>
+        <div class="industry-card" id="ind-creative">
+          <div class="industry-icon">🎨</div>
+          <h3>Creative</h3>
+          <p>UX designers, copywriters, brand strategists, and art directors.</p>
+        </div>
+        <div class="industry-card" id="ind-legal">
+          <div class="industry-icon">⚖️</div>
+          <h3>Legal</h3>
+          <p>Paralegals, legal assistants, associates, and compliance staff.</p>
+        </div>
+        <div class="industry-card" id="ind-mfg">
+          <div class="industry-icon">🏭</div>
+          <h3>Manufacturing</h3>
+          <p>Engineers, quality control, operations, and supply chain experts.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="process" id="process">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">How It Works</div>
+        <h2 class="section-title">Our Proven <span class="gradient-text">Process</span></h2>
+        <p class="section-subtitle">From intake to onboarding in as little as 72 hours.</p>
+      </div>
+      <div class="process-steps">
+        <div class="process-step" id="step-1">
+          <div class="step-number">01</div>
+          <div class="step-content">
+            <h3>Discovery Call</h3>
+            <p>We learn about your culture, goals, and the exact role you need filled. No generic job boards — just targeted strategy.</p>
+          </div>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step" id="step-2">
+          <div class="step-number">02</div>
+          <div class="step-content">
+            <h3>Talent Sourcing</h3>
+            <p>Our recruiters tap into our 50,000+ candidate network plus active sourcing to find the right fit — not just the available fit.</p>
+          </div>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step" id="step-3">
+          <div class="step-number">03</div>
+          <div class="step-content">
+            <h3>Screening & Vetting</h3>
+            <p>Multi-stage interviews, skills assessments, reference checks, and background screening — delivered in curated shortlists.</p>
+          </div>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step" id="step-4">
+          <div class="step-number">04</div>
+          <div class="step-content">
+            <h3>Placement & Support</h3>
+            <p>We manage offers, onboarding logistics, and stay engaged post-placement to ensure lasting success for both parties.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Social Proof</div>
+        <h2 class="section-title">What Our <span class="gradient-text">Clients Say</span></h2>
+      </div>
+      <div class="testimonials-track" id="testimonials-track">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p>"Apex filled a critical engineering role in 5 days. The quality of candidates was exceptional — they actually understood our tech stack."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">MR</div>
+            <div>
+              <div class="author-name">Marcus Reid</div>
+              <div class="author-title">CTO, NovaSpark Technologies</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p>"We've tried four staffing agencies. Apex is the only one that truly acts like a partner, not a vendor. Our retention is up 40%."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">JL</div>
+            <div>
+              <div class="author-name">Jennifer Liu</div>
+              <div class="author-title">VP of HR, Meridian Financial Group</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p>"Fast, professional, and communicative. They placed 18 nurses for our seasonal surge with zero compliance issues. Incredible."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">DT</div>
+            <div>
+              <div class="author-name">Dr. David Torres</div>
+              <div class="author-title">Director of Operations, Summit Health</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <div class="section-tag">Get In Touch</div>
+          <h2 class="section-title">Ready to <span class="gradient-text">Build</span> Your Dream Team?</h2>
+          <p>Whether you need one hire or one hundred, we're ready to mobilize. Tell us what you need and we'll get back to you within the hour.</p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon">📍</div>
+              <div>
+                <strong>Headquarters</strong>
+                <span>1200 Brickell Avenue, Suite 400<br/>Miami, FL 33131</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">📞</div>
+              <div>
+                <strong>Phone</strong>
+                <span><a href="tel:+13058001234">(305) 800-1234</a></span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">✉️</div>
+              <div>
+                <strong>Email</strong>
+                <span><a href="mailto:hello@apextalentgroup.com">hello@apextalentgroup.com</a></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-wrapper">
+          <form class="contact-form" id="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name" placeholder="Jane" required />
+              </div>
+              <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name" placeholder="Smith" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="company">Company</label>
+              <input type="text" id="company" name="company" placeholder="Acme Corp" />
+            </div>
+            <div class="form-group">
+              <label for="email">Work Email</label>
+              <input type="email" id="email" name="email" placeholder="jane@acmecorp.com" required />
+            </div>
+            <div class="form-group">
+              <label for="service-type">Service Needed</label>
+              <select id="service-type" name="service-type">
+                <option value="">Select a service...</option>
+                <option value="temp">Temporary Staffing</option>
+                <option value="perm">Permanent Placement</option>
+                <option value="exec">Executive Search</option>
+                <option value="c2h">Contract-to-Hire</option>
+                <option value="rpo">RPO Solutions</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Tell Us About Your Needs</label>
+              <textarea id="message" name="message" rows="4" placeholder="We're looking to hire 3 senior engineers for a fintech product..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="form-submit">
+              <span id="btn-text">Submit Request</span>
+              <svg id="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+            <div class="form-success" id="form-success">
+              <span>✓</span> Thank you! We'll be in touch within 1 hour.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="nav-logo">
+            <span class="logo-icon">⬡</span>
+            <span class="logo-text">Apex<span class="logo-accent">Talent</span></span>
+          </a>
+          <p>Connecting exceptional talent with exceptional opportunity. Since 2012.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" id="social-linkedin" aria-label="LinkedIn">in</a>
+            <a href="#" class="social-link" id="social-twitter" aria-label="Twitter">𝕏</a>
+            <a href="#" class="social-link" id="social-facebook" aria-label="Facebook">f</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Temporary Staffing</a></li>
+            <li><a href="#services">Permanent Placement</a></li>
+            <li><a href="#services">Executive Search</a></li>
+            <li><a href="#services">Contract-to-Hire</a></li>
+            <li><a href="#services">RPO Solutions</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Industries</h4>
+          <ul>
+            <li><a href="#industries">Technology</a></li>
+            <li><a href="#industries">Finance</a></li>
+            <li><a href="#industries">Healthcare</a></li>
+            <li><a href="#industries">Creative</a></li>
+            <li><a href="#industries">Legal</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 Apex Talent Group. All rights reserved.</p>
+        <p>Built with ♥ in Miami, FL</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
