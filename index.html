@@ -3,30 +3,63 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Apex Talent Group | Premier Staffing Solutions</title>
-  <meta name="description" content="Apex Talent Group connects top-tier professionals with industry-leading companies. Expert staffing in tech, finance, healthcare, and creative industries." />
+  <title>Northly Digital — Premier Staffing &amp; Talent Solutions</title>
+  <meta name="description" content="Northly Digital is Canada's premier staffing partner — connecting world-class technology, marketing, and creative talent with ambitious organizations. Trusted, precise, and fast." />
+  <meta name="theme-color" content="#06080F" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
+  <!-- AMBIENT BACKGROUND -->
+  <div class="ambient" aria-hidden="true">
+    <div class="aurora aurora-a"></div>
+    <div class="aurora aurora-b"></div>
+    <div class="aurora aurora-c"></div>
+    <div class="grain"></div>
+  </div>
+
+  <!-- ANNOUNCEMENT BAR -->
+  <div class="announce" id="announce">
+    <div class="announce-inner">
+      <span class="announce-dot"></span>
+      <span>Now placing in <strong>Toronto · Ottawa · Vancouver · Montréal</strong>. Average time-to-fill: <strong>72 hours</strong>.</span>
+      <a href="#contact" class="announce-cta">Start hiring →</a>
+    </div>
+  </div>
+
   <!-- NAV -->
   <nav id="navbar" class="navbar">
     <div class="nav-container">
-      <a href="#" class="nav-logo" id="logo-link">
-        <span class="logo-icon">⬡</span>
-        <span class="logo-text">Apex<span class="logo-accent">Talent</span></span>
+      <a href="#hero" class="nav-logo" id="logo-link" aria-label="Northly Digital home">
+        <span class="logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="lg" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#5EEAD4"/>
+                <stop offset="0.5" stop-color="#7DD3FC"/>
+                <stop offset="1" stop-color="#A78BFA"/>
+              </linearGradient>
+            </defs>
+            <path d="M16 2L29.8564 10V22L16 30L2.14359 22V10L16 2Z" stroke="url(#lg)" stroke-width="1.6"/>
+            <path d="M10 21V11L22 21V11" stroke="url(#lg)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span class="logo-text">Northly<span class="logo-dot">.</span><span class="logo-accent">Digital</span></span>
       </a>
       <ul class="nav-links" id="nav-links">
         <li><a href="#services" class="nav-link">Services</a></li>
         <li><a href="#industries" class="nav-link">Industries</a></li>
         <li><a href="#process" class="nav-link">Our Process</a></li>
-        <li><a href="#stats" class="nav-link">Results</a></li>
+        <li><a href="#why" class="nav-link">Why Northly</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
-      <a href="#contact" class="btn btn-nav" id="nav-cta">Hire Now</a>
+      <a href="#contact" class="btn btn-nav" id="nav-cta">
+        <span>Hire Talent</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
       <button class="hamburger" id="hamburger" aria-label="Toggle menu">
         <span></span><span></span><span></span>
       </button>
@@ -35,46 +68,59 @@
 
   <!-- HERO -->
   <section class="hero" id="hero">
-    <div class="hero-bg">
-      <div class="orb orb-1"></div>
-      <div class="orb orb-2"></div>
-      <div class="orb orb-3"></div>
-      <div class="grid-overlay"></div>
-    </div>
     <div class="hero-content">
-      <div class="hero-badge">
+      <div class="hero-badge reveal" data-reveal>
         <span class="badge-dot"></span>
-        Trusted by 500+ Companies Nationwide
+        <span>Trusted by 320+ Canadian &amp; North American companies</span>
       </div>
       <h1 class="hero-title">
-        We Connect <br />
-        <span class="gradient-text">World-Class Talent</span><br />
-        With Great Opportunities
+        <span class="reveal-line" data-reveal>Hire <em>brilliant</em> people.</span>
+        <span class="reveal-line" data-reveal><span class="gradient-text">Build unstoppable teams.</span></span>
       </h1>
-      <p class="hero-subtitle">
-        Apex Talent Group is your strategic hiring partner. Whether you're scaling a startup or building an enterprise team, we deliver vetted professionals who drive results — fast.
+      <p class="hero-subtitle reveal" data-reveal>
+        Northly Digital is the strategic staffing partner behind Canada's most ambitious teams. We place vetted technology, marketing, and creative professionals — precisely matched, rapidly onboarded, and ready to deliver.
       </p>
-      <div class="hero-actions">
-        <a href="#contact" class="btn btn-primary" id="hero-hire-btn">Find Talent</a>
-        <a href="#services" class="btn btn-ghost" id="hero-services-btn">
+      <div class="hero-actions reveal" data-reveal>
+        <a href="#contact" class="btn btn-primary magnetic" data-magnetic>
+          <span>Find Your Next Hire</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#services" class="btn btn-ghost magnetic" data-magnetic>
           <span>Explore Services</span>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
       </div>
-      <div class="hero-logos">
-        <span class="logos-label">Trusted by teams at</span>
-        <div class="logo-strip">
-          <div class="logo-item">Salesforce</div>
-          <div class="logo-item">Adobe</div>
-          <div class="logo-item">JPMorgan</div>
-          <div class="logo-item">HCA Health</div>
-          <div class="logo-item">Deloitte</div>
+
+      <div class="hero-meta reveal" data-reveal>
+        <div class="hero-meta-item">
+          <div class="meta-num">72<span>h</span></div>
+          <div class="meta-label">Avg. shortlist delivery</div>
+        </div>
+        <div class="hero-meta-item">
+          <div class="meta-num">96<span>%</span></div>
+          <div class="meta-label">First-year retention</div>
+        </div>
+        <div class="hero-meta-item">
+          <div class="meta-num">4.9<span>★</span></div>
+          <div class="meta-label">Client satisfaction</div>
         </div>
       </div>
     </div>
-    <div class="scroll-indicator" id="scroll-indicator">
-      <div class="scroll-line"></div>
+
+    <!-- LOGO MARQUEE -->
+    <div class="trust-strip reveal" data-reveal>
+      <div class="trust-label">Talent placed at companies you know</div>
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track" id="marquee-track">
+          <span>Shopify</span><span>Telus</span><span>RBC</span><span>CGI</span><span>OpenText</span><span>Lightspeed</span><span>Wealthsimple</span><span>Hootsuite</span><span>Cohere</span><span>Bench</span>
+          <span>Shopify</span><span>Telus</span><span>RBC</span><span>CGI</span><span>OpenText</span><span>Lightspeed</span><span>Wealthsimple</span><span>Hootsuite</span><span>Cohere</span><span>Bench</span>
+        </div>
+      </div>
     </div>
+
+    <a href="#services" class="scroll-indicator" id="scroll-indicator" aria-label="Scroll to services">
+      <span>Scroll</span>
+      <span class="scroll-line"></span>
+    </a>
   </section>
 
   <!-- STATS -->
@@ -82,26 +128,34 @@
     <div class="container">
       <div class="stats-grid">
         <div class="stat-item">
-          <div class="stat-number" data-target="4800">0</div>
-          <div class="stat-label">Placements Made</div>
+          <div class="stat-row">
+            <div class="stat-number" data-target="4800">0</div>
+          </div>
+          <div class="stat-label">Successful Placements</div>
         </div>
         <div class="stat-divider"></div>
         <div class="stat-item">
-          <div class="stat-number" data-target="98">0</div>
-          <div class="stat-suffix">%</div>
+          <div class="stat-row">
+            <div class="stat-number" data-target="98">0</div>
+            <div class="stat-suffix">%</div>
+          </div>
           <div class="stat-label">Client Satisfaction</div>
         </div>
         <div class="stat-divider"></div>
         <div class="stat-item">
-          <div class="stat-number" data-target="12">0</div>
-          <div class="stat-suffix">+</div>
-          <div class="stat-label">Years in Business</div>
+          <div class="stat-row">
+            <div class="stat-number" data-target="13">0</div>
+            <div class="stat-suffix">+</div>
+          </div>
+          <div class="stat-label">Years of Expertise</div>
         </div>
         <div class="stat-divider"></div>
         <div class="stat-item">
-          <div class="stat-number" data-target="72">0</div>
-          <div class="stat-suffix">hrs</div>
-          <div class="stat-label">Avg. Time to Fill</div>
+          <div class="stat-row">
+            <div class="stat-number" data-target="72">0</div>
+            <div class="stat-suffix">hrs</div>
+          </div>
+          <div class="stat-label">Avg. Time to Shortlist</div>
         </div>
       </div>
     </div>
@@ -111,95 +165,114 @@
   <section class="services" id="services">
     <div class="container">
       <div class="section-header">
-        <div class="section-tag">What We Offer</div>
-        <h2 class="section-title">Flexible Staffing <span class="gradient-text">Solutions</span></h2>
-        <p class="section-subtitle">From contract to full-time, we tailor every engagement to meet your exact needs.</p>
+        <div class="section-tag reveal" data-reveal>What we do</div>
+        <h2 class="section-title reveal" data-reveal>Staffing solutions, <span class="gradient-text">engineered for outcomes</span></h2>
+        <p class="section-subtitle reveal" data-reveal>From a single critical hire to a fully outsourced talent function — we tailor each engagement to fit how you work, hire, and grow.</p>
       </div>
-      <div class="services-grid">
-        <div class="service-card" id="service-temp">
-          <div class="service-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-          </div>
-          <h3>Temporary Staffing</h3>
-          <p>Quickly scale your workforce up or down with flexible contract workers ready to hit the ground running.</p>
-          <ul class="service-features">
-            <li>Same-week deployment</li>
-            <li>Pre-screened candidates</li>
-            <li>No long-term commitment</li>
-          </ul>
-          <a href="#contact" class="service-link">Learn More →</a>
-        </div>
 
-        <div class="service-card featured" id="service-perm">
-          <div class="featured-badge">Most Popular</div>
+      <div class="services-grid">
+        <article class="service-card reveal" data-reveal id="service-perm">
+          <div class="featured-badge">Most Requested</div>
           <div class="service-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/><path d="M12 11v10"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 11l-3 3-2-2"/></svg>
           </div>
           <h3>Permanent Placement</h3>
-          <p>Find your next long-term hire with our rigorous vetting process and cultural-fit assessments.</p>
+          <p>Long-term hires sourced through rigorous vetting, behavioural screening, and culture-fit assessments — backed by our 90-day replacement guarantee.</p>
           <ul class="service-features">
+            <li>Behavioural &amp; technical assessments</li>
+            <li>Cultural alignment scoring</li>
             <li>90-day replacement guarantee</li>
-            <li>Behavioral & skills testing</li>
-            <li>Dedicated account manager</li>
           </ul>
-          <a href="#contact" class="service-link">Learn More →</a>
-        </div>
+          <a href="#contact" class="service-link">
+            <span>Discuss a hire</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </article>
 
-        <div class="service-card" id="service-exec">
+        <article class="service-card reveal" data-reveal id="service-temp">
           <div class="service-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <h3>Contract &amp; Temporary</h3>
+          <p>Scale up — or down — with elastic, expert-vetted contractors. Same-week deployment, no long-term commitment, fully managed compliance.</p>
+          <ul class="service-features">
+            <li>Same-week deployment</li>
+            <li>Pre-screened, project-ready</li>
+            <li>Flexible 1-week to 24-month terms</li>
+          </ul>
+          <a href="#contact" class="service-link">
+            <span>Get a contractor</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </article>
+
+        <article class="service-card reveal" data-reveal id="service-exec">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
           </div>
           <h3>Executive Search</h3>
-          <p>Identify transformational leaders and C-suite executives with our confidential retained search practice.</p>
+          <p>Confidential retained search for transformative leaders. Director, VP, and C-suite mandates handled with discretion across Canada and North America.</p>
           <ul class="service-features">
-            <li>Nationwide candidate pool</li>
-            <li>Discreet & confidential</li>
-            <li>Industry-specific experts</li>
+            <li>Discreet, retained engagements</li>
+            <li>Cross-border candidate networks</li>
+            <li>Industry-specific lead consultants</li>
           </ul>
-          <a href="#contact" class="service-link">Learn More →</a>
-        </div>
+          <a href="#contact" class="service-link">
+            <span>Begin a search</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </article>
 
-        <div class="service-card" id="service-contract">
+        <article class="service-card reveal" data-reveal id="service-c2h">
           <div class="service-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="14" rx="2"/><path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><path d="M3 12h18"/></svg>
           </div>
           <h3>Contract-to-Hire</h3>
-          <p>Try before you commit. Evaluate candidates on the job before making a permanent offer.</p>
+          <p>De-risk your hires. Evaluate candidates on the job before extending a permanent offer — with seamless conversion when the fit is proven.</p>
           <ul class="service-features">
-            <li>Reduce hiring risk</li>
-            <li>Real-world evaluation</li>
-            <li>Seamless conversion</li>
+            <li>Real-world candidate evaluation</li>
+            <li>Frictionless conversion</li>
+            <li>Reduced cost-per-hire</li>
           </ul>
-          <a href="#contact" class="service-link">Learn More →</a>
-        </div>
+          <a href="#contact" class="service-link">
+            <span>Try-before-you-hire</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </article>
 
-        <div class="service-card" id="service-rpo">
+        <article class="service-card reveal" data-reveal id="service-rpo">
           <div class="service-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><path d="M3.27 6.96L12 12l8.73-5.04"/><path d="M12 22.08V12"/></svg>
           </div>
           <h3>RPO Solutions</h3>
-          <p>Outsource your entire recruitment process to us. We act as an extension of your HR team.</p>
+          <p>Outsource your recruitment engine. Northly acts as an embedded extension of your TA team — sourcing, screening, and scaling pipelines on demand.</p>
           <ul class="service-features">
-            <li>End-to-end management</li>
-            <li>Scalable hiring pipelines</li>
-            <li>Employer brand support</li>
+            <li>End-to-end pipeline management</li>
+            <li>Embedded recruiter pods</li>
+            <li>Employer-brand activation</li>
           </ul>
-          <a href="#contact" class="service-link">Learn More →</a>
-        </div>
+          <a href="#contact" class="service-link">
+            <span>Build a pipeline</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </article>
 
-        <div class="service-card" id="service-payroll">
+        <article class="service-card reveal" data-reveal id="service-payroll">
           <div class="service-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9h18"/><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M7 15h2"/><path d="M13 15h4"/></svg>
           </div>
-          <h3>Payroll & Compliance</h3>
-          <p>We handle taxes, benefits, and legal compliance so you can focus on running your business.</p>
+          <h3>Payroll &amp; Compliance</h3>
+          <p>We handle T4s, benefits, WSIB, and provincial compliance — across every Canadian province plus US states. Worry-free workforce administration.</p>
           <ul class="service-features">
-            <li>W-2 employee management</li>
-            <li>Benefits administration</li>
-            <li>Multi-state compliance</li>
+            <li>Multi-province &amp; multi-state coverage</li>
+            <li>Benefits &amp; group plan administration</li>
+            <li>Audit-ready record-keeping</li>
           </ul>
-          <a href="#contact" class="service-link">Learn More →</a>
-        </div>
+          <a href="#contact" class="service-link">
+            <span>Outsource payroll</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </article>
       </div>
     </div>
   </section>
@@ -208,40 +281,80 @@
   <section class="industries" id="industries">
     <div class="container">
       <div class="section-header">
-        <div class="section-tag">Expertise</div>
-        <h2 class="section-title">Industries We <span class="gradient-text">Serve</span></h2>
-        <p class="section-subtitle">Deep domain knowledge across the sectors that matter most.</p>
+        <div class="section-tag reveal" data-reveal>Where we specialize</div>
+        <h2 class="section-title reveal" data-reveal>Industry depth, <span class="gradient-text">not generic reach</span></h2>
+        <p class="section-subtitle reveal" data-reveal>Our consultants live and breathe the verticals they serve — bringing pre-qualified networks and category expertise to every search.</p>
       </div>
+
       <div class="industries-grid">
-        <div class="industry-card" id="ind-tech">
-          <div class="industry-icon">💻</div>
-          <h3>Technology</h3>
-          <p>Software engineers, data scientists, DevOps, and product managers.</p>
+        <div class="industry-card reveal" data-reveal>
+          <div class="industry-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
+          <h3>Technology &amp; Engineering</h3>
+          <p>Software, data, DevOps, ML, cybersecurity, product, and platform.</p>
         </div>
-        <div class="industry-card" id="ind-finance">
-          <div class="industry-icon">📊</div>
-          <h3>Finance</h3>
-          <p>Analysts, CPAs, compliance officers, and financial planners.</p>
+        <div class="industry-card reveal" data-reveal>
+          <div class="industry-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 14l4-4 4 4 5-5"/></svg></div>
+          <h3>Marketing &amp; Growth</h3>
+          <p>Performance, brand, content, lifecycle, SEO, and demand generation.</p>
         </div>
-        <div class="industry-card" id="ind-health">
-          <div class="industry-icon">🏥</div>
-          <h3>Healthcare</h3>
-          <p>Nurses, medical coders, administrators, and allied health pros.</p>
+        <div class="industry-card reveal" data-reveal>
+          <div class="industry-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06A1.65 1.65 0 0 0 15 19.4a1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.6 15 1.65 1.65 0 0 0 3 14H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.6 1.65 1.65 0 0 0 10 3.09V3a2 2 0 0 1 4 0v.09c0 .65.39 1.24 1 1.51"/></svg></div>
+          <h3>Operations &amp; Finance</h3>
+          <p>FP&amp;A, controllers, ops leaders, supply chain, procurement.</p>
         </div>
-        <div class="industry-card" id="ind-creative">
-          <div class="industry-icon">🎨</div>
-          <h3>Creative</h3>
-          <p>UX designers, copywriters, brand strategists, and art directors.</p>
+        <div class="industry-card reveal" data-reveal>
+          <div class="industry-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div>
+          <h3>Creative &amp; Design</h3>
+          <p>Product designers, brand directors, UX writers, motion, and 3D.</p>
         </div>
-        <div class="industry-card" id="ind-legal">
-          <div class="industry-icon">⚖️</div>
-          <h3>Legal</h3>
-          <p>Paralegals, legal assistants, associates, and compliance staff.</p>
+        <div class="industry-card reveal" data-reveal>
+          <div class="industry-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+          <h3>Cybersecurity &amp; IT</h3>
+          <p>SOC analysts, GRC leads, cloud security, infrastructure architects.</p>
         </div>
-        <div class="industry-card" id="ind-mfg">
-          <div class="industry-icon">🏭</div>
-          <h3>Manufacturing</h3>
-          <p>Engineers, quality control, operations, and supply chain experts.</p>
+        <div class="industry-card reveal" data-reveal>
+          <div class="industry-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><path d="M20 8v6"/><path d="M23 11h-6"/></svg></div>
+          <h3>People &amp; HR</h3>
+          <p>Talent partners, comp &amp; benefits, L&amp;D, DEI, and HRIS leads.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY NORTHLY -->
+  <section class="why" id="why">
+    <div class="container">
+      <div class="why-grid">
+        <div class="why-intro">
+          <div class="section-tag reveal" data-reveal>Why Northly</div>
+          <h2 class="section-title reveal" data-reveal>The difference is in the <span class="gradient-text">details</span></h2>
+          <p class="reveal" data-reveal>We don't ship resumes. We deliver <em>matches</em>. Every engagement is owned by a senior consultant who knows your business, your stack, and your culture — not a junior sourcer with a spreadsheet.</p>
+          <a href="#contact" class="btn btn-ghost magnetic" data-magnetic>
+            <span>Book a discovery call</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+        <div class="why-cards">
+          <div class="why-card reveal" data-reveal>
+            <div class="why-num">01</div>
+            <h3>Senior consultants only</h3>
+            <p>Every search is led by a 10+ year recruiter. No hand-offs, no pass-throughs, no diluted accountability.</p>
+          </div>
+          <div class="why-card reveal" data-reveal>
+            <div class="why-num">02</div>
+            <h3>Curated, not flooded</h3>
+            <p>You'll see 3 to 5 highly qualified shortlisted candidates — never a 30-resume dump.</p>
+          </div>
+          <div class="why-card reveal" data-reveal>
+            <div class="why-num">03</div>
+            <h3>Bias-aware screening</h3>
+            <p>Structured interviews, blind skills evaluation, and inclusive language — built into every workflow.</p>
+          </div>
+          <div class="why-card reveal" data-reveal>
+            <div class="why-num">04</div>
+            <h3>Transparent pricing</h3>
+            <p>Flat-fee or contingent — chosen up front. No surprise invoices, no hidden conversion fees.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -251,40 +364,38 @@
   <section class="process" id="process">
     <div class="container">
       <div class="section-header">
-        <div class="section-tag">How It Works</div>
-        <h2 class="section-title">Our Proven <span class="gradient-text">Process</span></h2>
-        <p class="section-subtitle">From intake to onboarding in as little as 72 hours.</p>
+        <div class="section-tag reveal" data-reveal>How it works</div>
+        <h2 class="section-title reveal" data-reveal>From brief to <span class="gradient-text">first day</span> in days, not months</h2>
+        <p class="section-subtitle reveal" data-reveal>A proven, four-stage process refined across 4,800+ placements.</p>
       </div>
+
       <div class="process-steps">
-        <div class="process-step" id="step-1">
+        <div class="process-step reveal" data-reveal>
           <div class="step-number">01</div>
           <div class="step-content">
-            <h3>Discovery Call</h3>
-            <p>We learn about your culture, goals, and the exact role you need filled. No generic job boards — just targeted strategy.</p>
+            <h3>Discovery</h3>
+            <p>A 45-minute working session to map the role, team dynamics, and success metrics — beyond the job description.</p>
           </div>
         </div>
-        <div class="process-connector"></div>
-        <div class="process-step" id="step-2">
+        <div class="process-step reveal" data-reveal>
           <div class="step-number">02</div>
           <div class="step-content">
-            <h3>Talent Sourcing</h3>
-            <p>Our recruiters tap into our 50,000+ candidate network plus active sourcing to find the right fit — not just the available fit.</p>
+            <h3>Sourcing</h3>
+            <p>We tap our 60,000+ pre-qualified network plus targeted active sourcing — finding the right fit, not the available fit.</p>
           </div>
         </div>
-        <div class="process-connector"></div>
-        <div class="process-step" id="step-3">
+        <div class="process-step reveal" data-reveal>
           <div class="step-number">03</div>
           <div class="step-content">
-            <h3>Screening & Vetting</h3>
-            <p>Multi-stage interviews, skills assessments, reference checks, and background screening — delivered in curated shortlists.</p>
+            <h3>Vetting</h3>
+            <p>Structured interviews, technical evaluation, references, and background checks — delivered as a curated 3-to-5 shortlist.</p>
           </div>
         </div>
-        <div class="process-connector"></div>
-        <div class="process-step" id="step-4">
+        <div class="process-step reveal" data-reveal>
           <div class="step-number">04</div>
           <div class="step-content">
-            <h3>Placement & Support</h3>
-            <p>We manage offers, onboarding logistics, and stay engaged post-placement to ensure lasting success for both parties.</p>
+            <h3>Placement</h3>
+            <p>Offer management, onboarding logistics, and 90-day check-ins to ensure lasting success on both sides.</p>
           </div>
         </div>
       </div>
@@ -295,42 +406,69 @@
   <section class="testimonials" id="testimonials">
     <div class="container">
       <div class="section-header">
-        <div class="section-tag">Social Proof</div>
-        <h2 class="section-title">What Our <span class="gradient-text">Clients Say</span></h2>
+        <div class="section-tag reveal" data-reveal>Word from our clients</div>
+        <h2 class="section-title reveal" data-reveal>Partners, <span class="gradient-text">not vendors</span></h2>
       </div>
-      <div class="testimonials-track" id="testimonials-track">
-        <div class="testimonial-card">
-          <div class="testimonial-stars">★★★★★</div>
-          <p>"Apex filled a critical engineering role in 5 days. The quality of candidates was exceptional — they actually understood our tech stack."</p>
+
+      <div class="testimonials-track">
+        <article class="testimonial-card reveal" data-reveal>
+          <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote>"Northly filled a critical Staff Engineer role in 6 days. The shortlist was tight, the candidates were exceptional — they actually understood our stack and our culture."</blockquote>
           <div class="testimonial-author">
             <div class="author-avatar">MR</div>
             <div>
               <div class="author-name">Marcus Reid</div>
-              <div class="author-title">CTO, NovaSpark Technologies</div>
+              <div class="author-title">CTO · NovaSpark Technologies</div>
             </div>
           </div>
-        </div>
-        <div class="testimonial-card">
-          <div class="testimonial-stars">★★★★★</div>
-          <p>"We've tried four staffing agencies. Apex is the only one that truly acts like a partner, not a vendor. Our retention is up 40%."</p>
+        </article>
+
+        <article class="testimonial-card reveal" data-reveal>
+          <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote>"We've tried four staffing agencies in three years. Northly is the only one that operates like a partner — not a vendor. First-year retention is up 41%."</blockquote>
           <div class="testimonial-author">
             <div class="author-avatar">JL</div>
             <div>
               <div class="author-name">Jennifer Liu</div>
-              <div class="author-title">VP of HR, Meridian Financial Group</div>
+              <div class="author-title">VP People · Meridian Financial Group</div>
             </div>
           </div>
-        </div>
-        <div class="testimonial-card">
-          <div class="testimonial-stars">★★★★★</div>
-          <p>"Fast, professional, and communicative. They placed 18 nurses for our seasonal surge with zero compliance issues. Incredible."</p>
+        </article>
+
+        <article class="testimonial-card reveal" data-reveal>
+          <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote>"Fast, professional, and genuinely strategic. Northly placed 14 contractors for our platform migration with zero compliance friction. We trust them with everything now."</blockquote>
           <div class="testimonial-author">
             <div class="author-avatar">DT</div>
             <div>
-              <div class="author-name">Dr. David Torres</div>
-              <div class="author-title">Director of Operations, Summit Health</div>
+              <div class="author-name">Dana Tremblay</div>
+              <div class="author-title">Director of Engineering · Summit Cloud</div>
             </div>
           </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <section class="cta-band" id="cta-band">
+    <div class="container">
+      <div class="cta-card reveal" data-reveal>
+        <div class="cta-glow"></div>
+        <div class="cta-content">
+          <div class="section-tag">Ready when you are</div>
+          <h2>Your next hire is <span class="gradient-text">already in our network.</span></h2>
+          <p>Tell us what you need — we'll have a curated shortlist on your desk within 72 hours. Discovery calls are always complimentary.</p>
+        </div>
+        <div class="cta-actions">
+          <a href="#contact" class="btn btn-primary magnetic" data-magnetic>
+            <span>Start hiring today</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="tel:+16138174782" class="btn btn-ghost magnetic" data-magnetic>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>+1 (613) 817-4782</span>
+          </a>
         </div>
       </div>
     </div>
@@ -341,75 +479,94 @@
     <div class="container">
       <div class="contact-wrapper">
         <div class="contact-info">
-          <div class="section-tag">Get In Touch</div>
-          <h2 class="section-title">Ready to <span class="gradient-text">Build</span> Your Dream Team?</h2>
-          <p>Whether you need one hire or one hundred, we're ready to mobilize. Tell us what you need and we'll get back to you within the hour.</p>
+          <div class="section-tag reveal" data-reveal>Get in touch</div>
+          <h2 class="section-title reveal" data-reveal>Let's <span class="gradient-text">build</span> your team.</h2>
+          <p class="reveal" data-reveal>Whether it's one strategic hire or a full embedded recruiting pod — we'll respond within the hour during business days.</p>
+
           <div class="contact-details">
-            <div class="contact-item">
-              <div class="contact-icon">📍</div>
+            <div class="contact-item reveal" data-reveal>
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
               <div>
                 <strong>Headquarters</strong>
-                <span>1200 Brickell Avenue, Suite 400<br/>Miami, FL 33131</span>
+                <span>340 Albert Street, Suite 1300<br/>Ottawa, ON · K1R 7Y6</span>
               </div>
             </div>
-            <div class="contact-item">
-              <div class="contact-icon">📞</div>
+            <div class="contact-item reveal" data-reveal>
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
               <div>
                 <strong>Phone</strong>
-                <span><a href="tel:+13058001234">(305) 800-1234</a></span>
+                <span><a href="tel:+16138174782">+1 (613) 817-4782</a></span>
               </div>
             </div>
-            <div class="contact-item">
-              <div class="contact-icon">✉️</div>
+            <div class="contact-item reveal" data-reveal>
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
               <div>
                 <strong>Email</strong>
-                <span><a href="mailto:hello@apextalentgroup.com">hello@apextalentgroup.com</a></span>
+                <span><a href="mailto:hello@northlydigital.com">hello@northlydigital.com</a></span>
+              </div>
+            </div>
+            <div class="contact-item reveal" data-reveal>
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              </div>
+              <div>
+                <strong>Office Hours</strong>
+                <span>Mon – Fri · 8:00 AM – 6:00 PM ET<br/>Same-day response, always.</span>
               </div>
             </div>
           </div>
         </div>
-        <div class="contact-form-wrapper">
-          <form class="contact-form" id="contact-form">
+
+        <div class="contact-form-wrapper reveal" data-reveal>
+          <form class="contact-form" id="contact-form" novalidate>
             <div class="form-row">
               <div class="form-group">
-                <label for="first-name">First Name</label>
+                <label for="first-name">First name</label>
                 <input type="text" id="first-name" name="first-name" placeholder="Jane" required />
               </div>
               <div class="form-group">
-                <label for="last-name">Last Name</label>
+                <label for="last-name">Last name</label>
                 <input type="text" id="last-name" name="last-name" placeholder="Smith" required />
               </div>
             </div>
             <div class="form-group">
               <label for="company">Company</label>
-              <input type="text" id="company" name="company" placeholder="Acme Corp" />
+              <input type="text" id="company" name="company" placeholder="Acme Inc." />
             </div>
             <div class="form-group">
-              <label for="email">Work Email</label>
-              <input type="email" id="email" name="email" placeholder="jane@acmecorp.com" required />
+              <label for="email">Work email</label>
+              <input type="email" id="email" name="email" placeholder="jane@acme.com" required />
             </div>
             <div class="form-group">
-              <label for="service-type">Service Needed</label>
+              <label for="service-type">Service needed</label>
               <select id="service-type" name="service-type">
-                <option value="">Select a service...</option>
-                <option value="temp">Temporary Staffing</option>
+                <option value="">Select a service…</option>
                 <option value="perm">Permanent Placement</option>
+                <option value="temp">Contract &amp; Temporary</option>
                 <option value="exec">Executive Search</option>
                 <option value="c2h">Contract-to-Hire</option>
                 <option value="rpo">RPO Solutions</option>
+                <option value="payroll">Payroll &amp; Compliance</option>
               </select>
             </div>
             <div class="form-group">
-              <label for="message">Tell Us About Your Needs</label>
-              <textarea id="message" name="message" rows="4" placeholder="We're looking to hire 3 senior engineers for a fintech product..."></textarea>
+              <label for="message">Tell us about your needs</label>
+              <textarea id="message" name="message" rows="4" placeholder="We're hiring 3 senior engineers for a Series-B fintech…"></textarea>
             </div>
-            <button type="submit" class="btn btn-primary btn-full" id="form-submit">
+            <button type="submit" class="btn btn-primary btn-full magnetic" id="form-submit" data-magnetic>
               <span id="btn-text">Submit Request</span>
-              <svg id="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              <svg id="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </button>
             <div class="form-success" id="form-success">
-              <span>✓</span> Thank you! We'll be in touch within 1 hour.
+              <span class="check">✓</span> Thank you. A senior consultant will reach out within the hour.
             </div>
+            <p class="form-note">By submitting, you agree to Northly Digital's privacy policy. We'll never share your information.</p>
           </form>
         </div>
       </div>
@@ -421,51 +578,80 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <a href="#" class="nav-logo">
-            <span class="logo-icon">⬡</span>
-            <span class="logo-text">Apex<span class="logo-accent">Talent</span></span>
+          <a href="#hero" class="nav-logo">
+            <span class="logo-mark" aria-hidden="true">
+              <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="lg2" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#5EEAD4"/>
+                    <stop offset="0.5" stop-color="#7DD3FC"/>
+                    <stop offset="1" stop-color="#A78BFA"/>
+                  </linearGradient>
+                </defs>
+                <path d="M16 2L29.8564 10V22L16 30L2.14359 22V10L16 2Z" stroke="url(#lg2)" stroke-width="1.6"/>
+                <path d="M10 21V11L22 21V11" stroke="url(#lg2)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <span class="logo-text">Northly<span class="logo-dot">.</span><span class="logo-accent">Digital</span></span>
           </a>
-          <p>Connecting exceptional talent with exceptional opportunity. Since 2012.</p>
+          <p>Canada's premier staffing partner. Connecting exceptional talent with exceptional opportunity since 2012.</p>
           <div class="social-links">
-            <a href="#" class="social-link" id="social-linkedin" aria-label="LinkedIn">in</a>
-            <a href="#" class="social-link" id="social-twitter" aria-label="Twitter">𝕏</a>
-            <a href="#" class="social-link" id="social-facebook" aria-label="Facebook">f</a>
+            <a href="#" class="social-link" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.95v5.66H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.55V9h3.57v11.45z"/></svg></a>
+            <a href="#" class="social-link" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+            <a href="#" class="social-link" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
           </div>
         </div>
+
         <div class="footer-col">
           <h4>Services</h4>
           <ul>
-            <li><a href="#services">Temporary Staffing</a></li>
             <li><a href="#services">Permanent Placement</a></li>
+            <li><a href="#services">Contract &amp; Temporary</a></li>
             <li><a href="#services">Executive Search</a></li>
             <li><a href="#services">Contract-to-Hire</a></li>
             <li><a href="#services">RPO Solutions</a></li>
+            <li><a href="#services">Payroll &amp; Compliance</a></li>
           </ul>
         </div>
+
         <div class="footer-col">
           <h4>Industries</h4>
           <ul>
             <li><a href="#industries">Technology</a></li>
-            <li><a href="#industries">Finance</a></li>
-            <li><a href="#industries">Healthcare</a></li>
-            <li><a href="#industries">Creative</a></li>
-            <li><a href="#industries">Legal</a></li>
+            <li><a href="#industries">Marketing &amp; Growth</a></li>
+            <li><a href="#industries">Operations &amp; Finance</a></li>
+            <li><a href="#industries">Creative &amp; Design</a></li>
+            <li><a href="#industries">Cybersecurity</a></li>
+            <li><a href="#industries">People &amp; HR</a></li>
           </ul>
         </div>
+
         <div class="footer-col">
           <h4>Company</h4>
           <ul>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Blog</a></li>
+            <li><a href="#why">Why Northly</a></li>
+            <li><a href="#process">Our Process</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li><a href="#">Careers</a></li>
             <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Accessibility</a></li>
           </ul>
         </div>
+
+        <div class="footer-col footer-contact">
+          <h4>Talk to us</h4>
+          <a class="footer-phone" href="tel:+16138174782">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>+1 (613) 817-4782</span>
+          </a>
+          <a class="footer-email" href="mailto:hello@northlydigital.com">hello@northlydigital.com</a>
+          <p class="footer-address">340 Albert Street, Suite 1300<br/>Ottawa, ON · K1R 7Y6</p>
+        </div>
       </div>
+
       <div class="footer-bottom">
-        <p>© 2024 Apex Talent Group. All rights reserved.</p>
-        <p>Built with ♥ in Miami, FL</p>
+        <p>© <span id="footer-year">2026</span> Northly Digital Staffing Inc. All rights reserved.</p>
+        <p class="footer-tag">Crafted with care in Ottawa · <a href="tel:+16138174782">+1 (613) 817-4782</a></p>
       </div>
     </div>
   </footer>
